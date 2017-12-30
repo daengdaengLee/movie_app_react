@@ -16,7 +16,10 @@ class App extends Component {
     .catch(err => console.log(err));
   }
 
-
+  async _getMovies() {
+    const movies = await this._callAPI();
+    this.setState({ movies });
+  }
 
   render() {
     return (

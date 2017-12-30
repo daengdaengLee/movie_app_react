@@ -3,6 +3,14 @@ import './App.css';
 import Movie from './Movie.js';
 
 class App extends Component {
+
+  _callAPI() {
+    return fetch('https://yts.am/api/v2/list_movies.json?sort_by=download_count')
+    .then(res => res.json())
+    .then(json => json.data.movies)
+    .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <div className="App">

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MoviePoster from './MoviePoster.js';
+import MovieGenre from './MovieGenre.js';
 
 function Movie({title, poster, genres, synopsis}) {
   return (
@@ -11,8 +12,7 @@ function Movie({title, poster, genres, synopsis}) {
       <div className="Movie__Column">
         <h1>{title}</h1>
         <div className="Movie__Genres">
-          <span className="Movie__Genre">{genres[0]}</span>
-          <span className="Movie__Genre">{genres[1]}</span>
+          {genres.map((genre, index) => <MovieGenre genre={genre} key={index} />)}
         </div>
         <p className="Movie__Synopsis">
           {synopsis}

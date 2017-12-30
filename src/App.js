@@ -38,14 +38,10 @@ class App extends Component {
   }
 
   render() {
+    const { movies } = this.state;
     return (
-      <div className="App">
-        <Movie
-          title="Movie test"
-          poster="https://source.superherostuff.com/wp-content/uploads/2017/05/7773769005_star-wars.jpg"
-          genres={['SF', 'Action']}
-          synopsis="Jedi vs Sith"
-        />
+      <div className={movies ? "App" : "App__loading"}>
+        {movies ? this._renderMovies() : 'Loading'}
       </div>
     );
   }

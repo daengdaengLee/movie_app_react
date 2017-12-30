@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MoviePoster from './MoviePoster.js';
+import MovieGenre from './MovieGenre.js';
 
 function Movie({title, poster, genres, synopsis}) {
   return (

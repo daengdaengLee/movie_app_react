@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import LinesEllipsis from 'react-lines-ellipsis';
 import MoviePoster from './MoviePoster.js';
 import MovieGenre from './MovieGenre.js';
+import './Movie.css';
 
 function Movie({title, poster, genres, synopsis}) {
   return (

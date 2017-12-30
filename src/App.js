@@ -9,6 +9,10 @@ class App extends Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    this._getMovies();
+  }
+
   _callAPI() {
     return fetch('https://yts.am/api/v2/list_movies.json?sort_by=download_count')
     .then(res => res.json())

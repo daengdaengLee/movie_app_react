@@ -27,13 +27,13 @@
   font-weight: 600;
 }
 
-.Movie ..Movie__Column .Movie__Genres {
+.Movie .Movie__Column .Movie__Genres {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-.Movie ..Movie__Column .Movie__Synopsis {
+.Movie .Movie__Column .Movie__Synopsis {
   text-overflow: ellipsis;
   color: #B4B5BD;
   overflow: hidden;
@@ -51,7 +51,7 @@
     flex-direction: column;
   }
 
-  .Movie__Column {
+  .Movie .Movie__Column {
     width: 100% !important;
   }
 }

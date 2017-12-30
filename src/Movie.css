@@ -51,7 +51,7 @@
     flex-direction: column;
   }
 
-  .Movie__Column {
+  .Movie .Movie__Column {
     width: 100% !important;
   }
 }

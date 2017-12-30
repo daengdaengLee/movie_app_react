@@ -7,4 +7,9 @@ function MoviePoster({poster, alt}) {
   )
 }
 
+MoviePoster.propTypes = {
+  poster: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired
+}
+
 export default MoviePoster;

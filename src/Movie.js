@@ -6,7 +6,7 @@ function Movie({title, poster, genres, synopsis}) {
   return (
     <div className="Movie">
       <div className="Movie__Column">
-        <img src={poster} alt={title} />
+        <MoviePoster poster={poster} alt={title} />
       </div>
       <div className="Movie__Column">
         <h1>{title}</h1>
